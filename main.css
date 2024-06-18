@@ -1,25 +1,22 @@
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 
 }
 
 .conteiner{
     max-width: 1200px;
     width: 100%;
-    
     margin: 0 auto;
     display: flex   ;
     justify-content: center;
-    align-items: center;
 }
 
 .total{
-
     border: 1px solid rgba(255, 255, 255, 0.868);
     margin-top: 100px;
-    background-color: rgba(68, 145, 121, 0.365);
+    background-color: rgba(68, 145, 121, 0.461);
     padding: 20px;
 }
 
@@ -41,13 +38,19 @@ h1{
 
 
 input,
-button{
+button,
+p.resposta,
+.erro
+{
     width: 300px;
     margin: 0 auto;
     display: block;
-    height: 20px;
-    align-self: center;
     margin-bottom: 4px;
+    outline: none;
+}
+
+input{
+    margin-top: 6px;
 }
 
 button{
@@ -65,6 +68,28 @@ form button:hover{
 
 input::-webkit-input-placeholder{
     color: rgba(128, 128, 128, 0.422);
+}
+
+p.resposta{
+    text-align: center;
+    color: white;
+    padding: 7px;
+    background-color: rgba(171, 205, 191, 0.614);
+    border: solid 1px white;
+    margin-top: 10px;
+    font-size: 16px;
+    display: none;
+    font-weight: 600;
+    text-shadow: 4px 4px 10px black;;
+}
+
+.erro{
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.779);
+    color: rgba(255, 255, 255, 0.991);
+    font-size: 14px;
+    padding: 4px;
+    display: none;
 }
 
 
